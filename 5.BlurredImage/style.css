@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu');
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -17,3 +17,20 @@ body {
 /* Overflow hides scrollbars
 Flex Direction centers the align items
 The justify content centers it, and the height makes it to where the justify content makes it center the screen */
+
+.bg{
+  background: url('https://images.unsplash.com/photo-1517732985480-66abf3dbf26e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  /* This is to make the blurring effect on the edges not as pronounced as they would be by default */
+  width: calc(100vw + 60px);
+  height: calc(100vh + 60px);
+  z-index: -1;
+  filter: blur(0px);
+}
+
+.loading-text{
+  font-size: 50px;
+  color: #fff;
+}
